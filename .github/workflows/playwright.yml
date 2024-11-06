@@ -18,7 +18,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Start development server
-        run: npm start &
+        run: npm run dev &
       - name: Wait for Vite to start
         run: |
           npx wait-on http://localhost:5173/
